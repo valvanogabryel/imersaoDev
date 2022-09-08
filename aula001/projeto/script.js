@@ -18,7 +18,7 @@ function calcMedia() {
         resultado.innerHTML = `A sua nota média é ${media}`
         resultado.style.paddingTop = '25px'
 
-        if (resultado > 7) {
+        if (media.value > 7) {
             alert('Aprovado')
         } else {
             alert('Reprovado')
