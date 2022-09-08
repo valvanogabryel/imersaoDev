@@ -67,7 +67,8 @@ input:focus {
     color: black;
     width: 70%;
     background-color: #F2A099;
-    padding-left: 25%;
+    text-align: center;
+    animation: underline 1s infinite;
 }
 
 
