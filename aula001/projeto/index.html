@@ -10,9 +10,24 @@
 </head>
 
 <body>
-
-
-
+    <main id="container">
+        <h1 id="page-title">Calculadora de Média</h1>
+        <p>Descubra qual a sua média de nota de todas as provas.</p>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+            class="page-logo" alt="">
+        <div id="notas">
+            <input type="number" name="nota" id="notaum" placeholder="Primeiro Bimestre" required min="0" maxlength="2"
+                max="10" step="0.5" class="teste">
+            <input type="number" name="nota" id="notadois" placeholder="Segundo Bimestre" required min="0" maxlength="2"
+                max="10" step="0.5" class="teste">
+            <input type="number" name="nota" id="notatres" placeholder="Terceiro Bimestre" required gth="2" max="10"
+                step="0.5" class="teste">
+            <input type="number" name="nota" id="notaquatro" placeholder="Quarto Bimestre" required min="0"
+                maxlength="2" max="10" step="0.5" class="teste">
+            <button type="submit" onclick="calcMedia()">Calcular a Média</button>
+            <h2 id="media"></h2>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 

@@ -1,1 +1,107 @@
 @charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body,
+html {
+    font-family: 'Courier New', Courier, monospace;
+    background: #3C4973;
+
+}
+
+#container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+#page-title {
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px 0 10px 0;
+    animation: underline 1s infinite;
+}
+
+p {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0 0 15px 0;
+}
+
+.page-logo {
+    width: 200px;
+}
+
+main {
+    color: white;
+}
+
+#notas {
+    background: white;
+    height: 500px;
+    margin: 10px auto;
+    width: 500px;
+    border-radius: 10px;
+    padding: 15px 0 0 0;
+}
+
+input {
+    display: block;
+    padding: 15px;
+    margin: 25px auto 10px auto;
+    width: 40%;
+    border-radius: 15px;
+    border: 2px solid;
+    transition: 0.3s;
+    background: white;
+    color: black;
+}
+
+input:focus {
+    color: black;
+    width: 70%;
+    background-color: #F2A099;
+    padding-left: 25%;
+}
+
+
+button {
+    display: block;
+    padding: 15px;
+    margin: 25px auto 10px auto;
+    width: 50%;
+    border-radius: 15px;
+    transition: 0.2s;
+    border: 1px solid;
+}
+
+button:hover {
+    background: #737EBF;
+    color: white;
+
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#media {
+    color: black;
+}
+
+
+@keyframes underline {
+    0% {
+        text-decoration: underline;
+    }
+
+    100% {
+        text-decoration: none;
+    }
+}
