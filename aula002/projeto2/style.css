@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background: gray center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+}
+
+#page-title {
+    margin: 20px;
+}
+
+#page-subtitle {
+    margin: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+#main {
+    border: 1px solid;
+    width: 20%;
+    margin: auto;
+    border-radius: 15px;
+    height: 250px;
+
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+input {
+    padding: 5px;
+    display: block;
+    margin: 50px auto;
+    height: 50px;
+    font-size: 2rem;
+    text-align: center;
+    width: 90px;
+}
+
+button {
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    bottom: 15px;
+    width: 80%;
+    cursor: pointer;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
+
+h2 {
+    font-size: 5rem;
+    margin-top: 50px;
+}

@@ -40,8 +40,9 @@ body {
 
 input {
     margin: 12px;
-    padding: 6px;
+    padding: 6px 6px;
     border-radius: 5px;
+    text-align: center;
 }
 
 label {
@@ -55,7 +56,33 @@ button {
     background: #ffffff;
 }
 
+button:hover {
+    background: #a3a3a3;
+    color: rgb(84, 84, 84);
+}
+
 h2 {
     color: #ffffff;
     font-size: 30px;
+    animation: underline 1s infinite;
+    text-align: center;
+    z-index: 10000;
+}
+
+#amogus {
+    opacity: 0.8;
+    height: 100px;
+
+
+}
+
+
+@keyframes underline {
+    0% {
+        text-decoration: underline;
+    }
+
+    100% {
+        text-decoration: none;
+    }
 }
