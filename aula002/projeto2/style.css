@@ -70,4 +70,16 @@ button:hover {
 h2 {
     font-size: 5rem;
     margin-top: 50px;
+    animation: underline 1s infinite;
+}
+
+@keyframes underline {
+    0% {
+        text-decoration: underline;
+    }
+
+    100% {
+        text-decoration: none;
+    }
+
 }
