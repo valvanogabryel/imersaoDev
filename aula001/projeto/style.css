@@ -69,6 +69,7 @@ input:focus {
     background-color: #F2A099;
     text-align: center;
     animation: underline 1s infinite;
+    transition: 0.3s;
 }
 
 
