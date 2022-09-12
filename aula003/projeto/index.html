@@ -5,14 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Média de Nota</title>
+    <title>Mentalista</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-
-
+    <main>
+        <h1 id="page-title">Mentalista</h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo"
+            alt="">
+        <p class="page-subtitle">Digite um número de 0 a 10</p>
+        <input type="number" name="chute" id="valor" required min="0" max="10">
+        <button type="submit" onclick="chutar()">Chutar</button>
+    </main>
+    <div>
+        <h2 id="res" style="margin-top: 10px"></h2>
+    </div>
     <script src="script.js"></script>
 </body>
 

@@ -1,1 +1,49 @@
 @charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background: url(img/background.jpg) no-repeat fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#page-title {
+    color: black;
+    font-size: 5rem;
+    margin-top: 20px;
+}
+
+img {
+    transform: scale(0.8);
+    margin-bottom: 20px;
+}
+
+.page-subtitle {
+    margin: 20px;
+}
+
+
+input {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 2rem;
+    width: 100px;
+    text-align: center;
+}
+
+button {
+    margin: 10px 0 0 0;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
