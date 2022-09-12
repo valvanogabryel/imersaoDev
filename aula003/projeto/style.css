@@ -26,8 +26,17 @@ img {
     margin-bottom: 20px;
 }
 
+.dificuldade {
+    background: white;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: 1px solid black;
+}
+
+
 .page-subtitle {
     margin: 20px;
+    font-size: 1.7rem;
 }
 
 
@@ -46,4 +55,51 @@ button {
     border-radius: 15px;
     padding: 10px;
     cursor: pointer;
+    border: 1px solid;
+    transition: 0.3s;
+}
+
+button:hover {
+    border: 1px dashed #6695C1;
+    background: #95CCDE;
+    color: white;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    body,
+    html {
+        background: lightblue no-repeat fixed;
+        background-size: cover;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        margin: auto;
+    }
+
+    #page-title {
+        color: white;
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    img {
+        transform: scale(0.4);
+        margin-bottom: 20px;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        right: 5%;
+    }
+
+    #cell {
+        background-color: white;
+        padding: 50px;
+        border-radius: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }

@@ -14,12 +14,25 @@
         <h1 id="page-title">Mentalista</h1>
         <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo"
             alt="">
-        <p class="page-subtitle">Digite um número de 0 a 10</p>
-        <input type="number" name="chute" id="valor" required min="0" max="10">
-        <button type="submit" onclick="chutar()">Chutar</button>
+        <!-- <input type="radio" name="dif" id="facil">
+        <label for="easy" class="dificuldade">Fácil</label>
+    
+        <input type="radio" name="dif" id="medio">
+        <label for="medium" class="dificuldade">Médio</label>
+        
+        <input type="radio" name="dif" id="dificil">
+        <label for="hard" class="dificuldade">Difícil</label>
+         -->
+        <div id="cell">
+            <p class="page-subtitle">Digite um número de 0 a 10</p>
+            <input type="number" name="chute" id="valor" required min="0" max="10">
+            <button type="submit" onclick="chutar()">Chutar</button>
+            <button type="reset" onclick="reiniciar()"><i data-feather="refresh-cw" class="icon"></i> Resetar</button>
+        </div>
     </main>
     <div>
         <h2 id="res" style="margin-top: 10px"></h2>
+        <p id="tentativas" style="font-size: 2rem;"></p>
     </div>
     <script src="script.js"></script>
 </body>
