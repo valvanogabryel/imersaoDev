@@ -15,7 +15,7 @@ function chutar() {
             tentativas.innerHTML = `Restam ${numTentativas} tentativas`
         } else {
             resposta.innerHTML = `Acertou!`
-            tentativas.innerHTML = `Restavam ${numTentativas} tentativas.`
+            tentativas.innerHTML = `Restavam ${numTentativas} tentativa(s).`
         }
         numTentativas--
     } else {
