@@ -132,6 +132,18 @@ img {
     float: left;
     font-size: 2rem;
     width: 0%;
+    position: relative;
+    bottom: 45vh;
+}
+
+#pokemonBotSorteado {
+    display: none;
+    float: right;
+    font-size: 2rem;
+    width: 0%;
+    margin-right: 150px;
+    position: relative;
+    bottom: 40vh;
 }
 
 

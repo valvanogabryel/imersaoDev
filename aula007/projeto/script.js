@@ -94,6 +94,7 @@ var playerCard
 
 function sortearCarta() {
     var pokemonSorteado = document.getElementById('pokemonSorteado')
+    var botPokemonSorteado = document.getElementById('pokemonBotSorteado')
     var botCardNum = parseInt(Math.random() * 10)
     botCard = cartas[botCardNum]
     var playerCardNum = parseInt(Math.random() * 10)
@@ -106,8 +107,9 @@ function sortearCarta() {
     document.getElementById('btnJogar').disabled = false;
 
     pokemonSorteado.style.display = 'flex'
-
+    botPokemonSorteado.style.display = 'flex'
     pokemonSorteado.innerHTML = `O seu Pokemon Sorteado é: ${playerCard['nome']}`
+    botPokemonSorteado.innerHTML = `O seu adversário é: ${botCard['nome']}`
 
 
     exibirOpcoes()
@@ -166,6 +168,8 @@ function jogar() {
 
 
 function resetar() {
+    var pokemonSorteado = document.getElementById('pokemonSorteado')
+    var botPokemonSorteado = document.getElementById('pokemonBotSorteado')
     var btnReset = document.getElementById('reiniciar')
     var atributeSelected = atributeSelection()
     var elementRes = document.getElementById('resultado')
@@ -182,8 +186,8 @@ function resetar() {
     document.getElementById('btnSortear').disabled = true;
     document.getElementById('btnJogar').disabled = false;
 
-
     pokemonSorteado.innerHTML = `O seu Pokemon Sorteado é: ${playerCard['nome']}`
+    botPokemonSorteado.innerHTML = `O seu adversário é: ${botCard['nome']}`
     var playerCardValue = playerCard.atributos[atributeSelected]
     var botCardValue = botCard.atributos[atributeSelected]
     apagar.style.display = 'block'
