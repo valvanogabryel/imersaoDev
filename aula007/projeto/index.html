@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="apagar">
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
+            alt="">
+        <h1 class="page-title">Super Trunfo Pokemon</h1>
+
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+        <span id="pokemonSorteado"></span>
+        <form id="form">
+            <h2 id="align">Escolha o seu atributo</h2>
+            <div class="opcoes" id="opcoes"></div>
+            <button type="button" id="btnJogar" onclick="jogar()" disabled="true">Jogar</button>
+        </form>
+    </div>
+    <div id="resultado"></div>
+    <div id="reiniciar">
+        <button type="reset" id="btnResetar" onclick="resetar()">Jogar Novamente</button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
