@@ -1,14 +1,11 @@
-function mutar(event) {
+function mutar() {
     var botaoMutar = document.getElementById('btnMute')
     var audio = document.getElementById('audio')
 
-    do {
-        audio.toggleAttribute('muted')
 
-    } while (audio.toggleAttribute('autoplay'))
+    audio.toggleAttribute('muted')
+    audio.toggleAttribute('autoplay')
 
-
-    botaoMutar.addEventListener('click', mutar)
 }
 
 var card1 = {
