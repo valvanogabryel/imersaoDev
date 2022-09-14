@@ -146,7 +146,11 @@ img {
     bottom: 40vh;
 }
 
-
+#pokemonIcon {
+    background: url(https://cdn1.iconfinder.com/data/icons/pokemon-set/24/Charizard-512.png);
+    height: 250px;
+    width: 250px;
+}
 
 @keyframes scale {
     0% {
@@ -170,3 +174,6 @@ img {
 
     100% {}
 }
+
+
+@media screen and (min-width: 768px) {}
