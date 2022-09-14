@@ -122,13 +122,6 @@ function exibirOpcoes() {
         opcoesTexto += "<input type='radio' id='teste' checked name='atributo' value='" + atributo + "'>" + atributo + " " + playerCard.atributos[atributo]
         opcoes.innerHTML = opcoesTexto
     }
-
-
-
-
-
-
-
 }
 
 function atributeSelection() {
@@ -148,6 +141,13 @@ function jogar() {
     var elementRes = document.getElementById('resultado')
     var playerCardValue = playerCard.atributos[atributeSelected]
     var botCardValue = botCard.atributos[atributeSelected]
+    var atributosOponente = document.getElementById('atributosOponente')
+
+    for (var atributo in botCard.atributos) {
+        atributosOponente.innerHTML = `Os atributos do seu oponente eram: </br> ${botCard.atributos}`
+
+    }
+
 
     if (playerCardValue > botCardValue) {
         elementRes.innerHTML = 'Você venceu!'
@@ -164,6 +164,8 @@ function jogar() {
         apagar.style.display = 'none'
         btnResetar.style.display = 'block'
     }
+
+
 }
 
 
@@ -185,7 +187,6 @@ function resetar() {
     }
     document.getElementById('btnSortear').disabled = true;
     document.getElementById('btnJogar').disabled = false;
-
     pokemonSorteado.innerHTML = `O seu Pokemon Sorteado é: ${playerCard['nome']}`
     botPokemonSorteado.innerHTML = `O seu adversário é: ${botCard['nome']}`
     var playerCardValue = playerCard.atributos[atributeSelected]
