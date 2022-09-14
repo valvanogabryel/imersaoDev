@@ -1,3 +1,16 @@
+function mutar(event) {
+    var botaoMutar = document.getElementById('btnMute')
+    var audio = document.getElementById('audio')
+
+    do {
+        audio.toggleAttribute('muted')
+
+    } while (audio.toggleAttribute('autoplay'))
+
+
+    botaoMutar.addEventListener('click', mutar)
+}
+
 var card1 = {
     nome: 'Charizard',
     atributos: {
@@ -143,18 +156,22 @@ function jogar() {
     var botCardValue = botCard.atributos[atributeSelected]
     var atributosOponente = document.getElementById('atributosOponente')
 
-    for (var atributo in botCard.atributos) {
-        atributosOponente.innerHTML = `Os atributos do seu oponente eram: </br> ${botCard.atributos}`
 
-    }
+    atributosOponente.innerHTML = 'Os atributos do seu oponente eram: </br>'
+    atributosOponente.innerHTML += `Ataque ${botCard.atributos['ataque']} </br>`
+    atributosOponente.innerHTML += `Defesa ${botCard.atributos['defesa']} </br>`
+    atributosOponente.innerHTML += `Magia ${botCard.atributos['magia']} </br>`
 
 
     if (playerCardValue > botCardValue) {
         elementRes.innerHTML = 'Você venceu!'
+        // audio vitoria
     } else if (botCardValue > playerCardValue) {
         elementRes.innerHTML = 'Você perdeu!'
+        // audio derrota
     } else {
         elementRes.innerHTML = 'Empatou!'
+        // audio empate
     }
     elementRes.style.color = 'white'
     elementRes.style.fontSize = '4rem'

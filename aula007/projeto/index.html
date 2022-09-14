@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -37,6 +39,13 @@
         <button type="reset" id="btnResetar" onclick="resetar()">Jogar Novamente</button>
         <h2 id="atributosOponente">placeholder</h2>
     </div>
+    <audio src="mp3/audio-fundo-pokemon.mp3" id="audio" autoplay muted></audio>
+
+    <button id="btnMute" onclick="mutar()">
+        <span class="material-symbols-outlined" id="muteSymbol">
+            volume_mute
+        </span>
+    </button>
 
 
     <script src="script.js"></script>

@@ -33,6 +33,22 @@ button {
     font-family: 'Press Start 2P', cursive;
 }
 
+#btnMute {
+    width: 0%;
+    border-radius: 100%;
+    top: 0%;
+    position: absolute;
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#muteSymbol {
+    position: relative;
+    color: white;
+    right: 15px;
+    /* Levemente "desalinhado" para alterar o simbolo quando clicado */
+}
+
 button:hover {
     opacity: 0.8;
 }
@@ -46,7 +62,8 @@ h2 {
 #atributosOponente {
     font-family: 'Nabla', cursive;
     text-align: center;
-    margin: auto;
+    margin: 140px 0 0 0;
+    position: relative;
 }
 
 img {
@@ -56,6 +73,12 @@ img {
 
 #btnSortear {
     margin: auto;
+}
+
+#btnResetar {
+    position: relative;
+    top: 140px;
+    left: 35px;
 }
 
 #carta-jogador {
@@ -155,6 +178,22 @@ img {
     0% {}
 
     100% {}
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 10%;
+
+    }
+
+    to {
+        margin-left: 0%;
+        width: 2%;
+    }
+
+
+
 }
 
 
