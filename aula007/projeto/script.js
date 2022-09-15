@@ -184,6 +184,14 @@ var botCard
 var playerCard
 var contador = 0
 
+function musica() {
+    var musica = document.getElementById('audio')
+
+    musica.volume = 0.5
+
+}
+
+
 function sortearCarta() {
     var pokemonSorteado = document.getElementById('pokemonSorteado')
     var botPokemonSorteado = document.getElementById('pokemonBotSorteado')
