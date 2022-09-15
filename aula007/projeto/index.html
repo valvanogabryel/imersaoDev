@@ -22,32 +22,29 @@
         <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
             alt="">
         <h1 class="page-title">Super Trunfo Pokemon</h1>
+        <h2 style="margin-bottom: 10px;">Ganhe 10 rodadas</h2>
         <div id="contain">
             <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
             <form id="form">
-                <h2 id="align">Escolha o seu atributo</h2>
+                <h2 id="align"></h2>
                 <div class="opcoes" id="opcoes"></div>
                 <button type="button" id="btnJogar" onclick="jogar()" disabled="true">Jogar</button>
             </form>
         </div>
         <span id="pokemonSorteado"></span>
         <span id="pokemonBotSorteado"></span>
-        <span id="pokeonicon"></span>
     </div>
     <div id="resultado"></div>
     <div id="reiniciar">
         <button type="reset" id="btnResetar" onclick="resetar()">Jogar Novamente</button>
         <h2 id="atributosOponente">placeholder</h2>
+        <span id="numTentativas"></span>
     </div>
-    <audio src="mp3/audio-fundo-pokemon.mp3" id="audio" autoplay></audio>
-
-    <button id="btnMute" onclick="mutar()">
-        <span class="material-symbols-outlined" id="muteSymbol">
-            volume_mute
-        </span>
-    </button>
+    <!-- <audio src="mp3/audio-fundo-pokemon.mp3" id="audio" controls muted></audio> -->
 
 
+
+    <footer>Developed by <a href="#"><em>Gabryel Valvano</em></a></footer>
     <script src="script.js"></script>
 </body>
 

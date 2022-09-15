@@ -1,14 +1,15 @@
 body {
     font-family: 'Nabla', cursive;
-    min-height: 854px;
+    /* min-height: 854px; */
     background-image: url('https://pokemonrevolution.net/forum/uploads/monthly_2021_03/DVMT-6OXcAE2rZY.jpg.afab972f972bd7fbd4253bc7aa1cf27f.jpg');
     background-color: #000000;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     padding-bottom: 20vh;
-    /* overflow: hidden; */
+    overflow: hidden;
     height: 100vh;
+    animation: slidein 1s;
 }
 
 .container {
@@ -33,21 +34,6 @@ button {
     font-family: 'Press Start 2P', cursive;
 }
 
-#btnMute {
-    width: 0%;
-    border-radius: 100%;
-    top: 0%;
-    position: absolute;
-    background: transparent;
-    border: 1px solid rgb(255, 255, 255);
-}
-
-#muteSymbol {
-    position: relative;
-    color: white;
-    right: 15px;
-    /* Levemente "desalinhado" para alterar o simbolo quando clicado */
-}
 
 button:hover {
     opacity: 0.8;
@@ -92,8 +78,6 @@ img {
     align-items: flex-end;
 }
 
-
-
 .opcoes {
     color: white;
     font-size: 2em;
@@ -113,7 +97,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5rem;
-    padding: 0 0 20px 0;
+    padding: 0 0 30px 0;
 }
 
 #reiniciar {
@@ -157,6 +141,29 @@ img {
     width: 250px;
 }
 
+#numTentativas {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    display: inline;
+    left: 50%;
+    top: 115px;
+    transform: translate(-50%);
+    font-size: 2em;
+}
+
+em {
+    font-family: 'Nabla', cursive;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.631);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(201, 152, 53);
+}
+
 @keyframes scale {
     0% {
         transform: scale(1)
@@ -174,27 +181,59 @@ img {
 
 }
 
-@keyframes teste {
-    0% {}
+@keyframes blink {
+    0% {
+        opacity: 0;
+        color: white;
+    }
 
-    100% {}
+    25% {
+        opacity: 1;
+        color: black;
+    }
+
+    50% {
+        opacity: 0;
+        color: black;
+    }
+
+    100% {
+        opacity: 1;
+        color: white;
+    }
 }
 
 @keyframes slidein {
     from {
-        margin-left: 100%;
-        width: 10%;
+        margin-left: 70%;
 
     }
 
     to {
         margin-left: 0%;
-        width: 2%;
     }
 
 
 
 }
 
+footer {
+    font-family: 'Press Start 2P', cursive;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 5px;
+    animation: blink 0.5s infinite;
+}
 
-@media screen and (min-width: 768px) {}
+
+@media screen and (max-width: 768px) {
+    body {
+        min-height: 854px;
+        overflow: visible;
+    }
+}
