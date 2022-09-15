@@ -214,11 +214,12 @@ a {
 @keyframes slidein {
     from {
         margin-left: 70%;
-
+        opacity: 0;
     }
 
     to {
         margin-left: 0%;
+        opacity: 1;
     }
 
 
