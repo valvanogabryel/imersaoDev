@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: 'Nabla', cursive;
     /* min-height: 854px; */
@@ -232,9 +239,19 @@ footer {
 }
 
 
+
 @media screen and (max-width: 768px) {
     body {
         min-height: 854px;
         overflow: visible;
+    }
+
+    .container {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .page-logo {
+        overflow: hidden;
     }
 }
