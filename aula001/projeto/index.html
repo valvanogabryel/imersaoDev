@@ -15,7 +15,7 @@
         <p>Descubra qual a sua média de nota de todas as provas.</p>
         <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
             class="page-logo" alt="">
-        <div id="notas">
+        <div id="notas" class="dark">
             <input type="number" name="nota" id="notaum" placeholder="Primeiro Bimestre" required min="0" maxlength="2"
                 max="10" step="0.5" class="teste">
             <input type="number" name="nota" id="notadois" placeholder="Segundo Bimestre" required min="0" maxlength="2"
@@ -24,10 +24,12 @@
                 step="0.5" class="teste">
             <input type="number" name="nota" id="notaquatro" placeholder="Quarto Bimestre" required min="0"
                 maxlength="2" max="10" step="0.5" class="teste">
-            <button type="submit" onclick="calcMedia()">Calcular a Média</button>
+            <button type="submit" onclick="calcMedia()" id="teste">Calcular a Média</button>
             <h2 id="media"></h2>
         </div>
     </main>
+    <footer><button type="button" id="alterar" value="Alterar Tema" onclick="alterarTema()">Alterar Tema</button>
+    </footer>
     <script src="script.js"></script>
 </body>
 

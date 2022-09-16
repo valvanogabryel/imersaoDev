@@ -20,8 +20,15 @@ function calcMedia() {
 
         if (media > 7) {
             alert('Aprovado')
-        } else {
+        } else if (media < 7) {
             alert('Reprovado')
+        } else {
+            alert('Insira os valores')
+            resultado.innerHTML = ''
         }
     }
+}
+
+function alterarTema() {
+    document.body.classList.toggle('dark')
 }
