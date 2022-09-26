@@ -4,7 +4,7 @@ var card1 = {
     atributos: {
         ataque: 10,
         defesa: 5,
-        magia: 5
+        magia: 5,
     }
 }
 
