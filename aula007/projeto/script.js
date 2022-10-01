@@ -184,11 +184,9 @@ var botCard
 var playerCard
 var contador = 0
 
-function musica() {
+function musica() { // diminuir o volume da música
     var musica = document.getElementById('audio')
-
     musica.volume = 0.5
-
 }
 
 
@@ -203,7 +201,6 @@ function sortearCarta() {
     while (botCardNum == playerCardNum) {
         botCardNum = parseInt(Math.random() * 20)
         playerCardNum = parseInt(Math.randow() * 20)
-        return
     }
     document.getElementById('btnSortear').disabled = true;
     document.getElementById('btnJogar').disabled = false;
@@ -296,6 +293,7 @@ function resetar() {
     console.log(botCard)
     if (botCardNum == playerCardNum) {
         botCardNum = parseInt(Math.random() * 20)
+        playerCardNum = parseInt(Math.random() * 20)
     }
     document.getElementById('btnSortear').disabled = true;
     document.getElementById('btnJogar').disabled = false;
