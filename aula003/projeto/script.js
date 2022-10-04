@@ -1,15 +1,15 @@
-var numSecreto = Number.parseInt(Math.random() * 11)
-var numTentativas = 5
+let numSecreto = Number.parseInt(Math.random() * 11)
+let numTentativas = 5
 function chutar() {
-    var chute = Number.parseInt(document.getElementById('valor').value)
-    var resposta = document.getElementById('res')
-    var tentativas = document.getElementById('tentativas')
-    var input = document.getElementById('valor')
+    const chute = Number.parseInt(document.getElementById('valor').value)
+    const resposta = document.getElementById('res')
+    const tentativas = document.getElementById('tentativas')
+    const input = document.getElementById('valor')
     if (numTentativas >= 1) {
         if (chute < 0 || chute > 10) {
             alert('Insira um número entre 0 e 10')
         } else if (input.value.length == 0) {
-            alert('Insira um valor para jogar.')
+            alert('Valor inválido.')
             resposta.innerHTML = ''
             tentativas.innerHTML = ''
         } else if (chute < numSecreto) {
@@ -30,9 +30,9 @@ function chutar() {
 }
 
 function reiniciar() {
-    var chute = Number.parseInt(document.getElementById('valor').value)
-    var resposta = document.getElementById('res')
-    var tentativas = document.getElementById('tentativas')
+    const chute = Number.parseInt(document.getElementById('valor').value)
+    const resposta = document.getElementById('res')
+    const tentativas = document.getElementById('tentativas')
     document.getElementById('valor').value = ''
     chute.value = ''
     resposta.innerHTML = ''
